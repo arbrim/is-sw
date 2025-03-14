@@ -1,8 +1,11 @@
 {
   "name": "is-sw",
   "version": "1.0.2",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "cp package.json dist/ && cp README.md dist/ && cp LICENSE dist/",
