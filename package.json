@@ -1,18 +1,16 @@
 {
   "name": "is-sw",
-  "version": "1.0.2",
-  "main": "dist/index.js",
+  "version": "1.0.3",
+  "main": "index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "cp package.json dist/ && cp README.md dist/ && cp LICENSE dist/",
-    "publish:package": "npm run build && npm publish dist"
+    "publish:package": "npm run build && npm publish"
   },
-  "author": "arbrim",
-  "license": "ISC",
+  "files": [
+    "index.js",
+    "dist"
+  ],
   "devDependencies": {
     "typescript": "^5.8.2"
   }
