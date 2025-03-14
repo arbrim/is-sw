@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // allow .js files
+    "checkJs": true, // check for errors using JSDoc (if you have JSDoc comments)
+    "declaration": true, // generate .d.ts files
+    "emitDeclarationOnly": true, // only emit .d.ts, no compiled .js
+    "outDir": "dist" // where to put the .d.ts file
+  },
+  "include": [
+    "index.js" // or "src/**/*.js", etc.
+  ]
+}

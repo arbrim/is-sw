@@ -1,11 +1,16 @@
 {
   "name": "is-sw",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublishOnly": "cp package.json dist/ && cp README.md dist/ && cp LICENSE dist/",
+    "publish:package": "npm run build && npm publish dist"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "arbrim",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }
